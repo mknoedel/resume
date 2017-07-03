@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Michael Knoedel</title>
+
+    <!-- Lato Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet -->
+    <link href="css/gallery-materialize.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body class="doc">
+
+    <!-- Navbar and Header -->
+    <nav class="nav-extended blue">
+      <div class="nav-background">
+        <div class="pattern active" style="background-image: url('./assets/argyle_pattern_cp.png');"></div>
+      </div>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"><i class="material-icons">assignment_ind</i>Resume</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Portfolio</a></li>
+          <li class="active"><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Contact Me<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="https://github.com/mknoedel" target="_blank"><img src="./assets/Logos/GitHub-Mark-Light-32px.png" height="18" width="18"></a></li>
+          <li><a href="https://www.linkedin.com/in/mknoedel" target="_blank"><img src="./assets/Logos/In-White-54px-R.png" height="18" width="18"></a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id='feature-dropdown' class='dropdown-content'>
+          <li><a onclick="window.location.href='mailto:mknoedel@gmail.com'"><i class="material-icons">email</i>mknoedel@gmail.com</a></li>
+          <li><a href="tel:6508227592"><i class="material-icons">phone</i>(650) 822-7592</a></li>
+        </ul>
+
+        <div class="nav-header center">
+          <h1>Resume</h1>
+          <div class="tagline">Michael Knoedel</div>
+          <a class="btn white blue-text" href="./assets/Resume Files/Resume6-23-2017.pdf">PDF</a>
+          <a class="btn white blue-text" href="./assets/Resume Files/Resume6-23-2017.docx">DOCX</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Action Button -->
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large blue">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li class="waves-effect waves-light"><a href="./assets/Resume Files/Resume6-23-2017.pdf">PDF</a></li>
+        <li class="waves-effect waves-light"><a href="./assets/Resume Files/Resume6-23-2017.docx">DOCX</a></li>
+        <li class="waves-effect waves-light"><a onclick="window.location.href='mailto:mknoedel@gmail.com'"><i class="material-icons">email</i></a></li>
+        <li class="waves-effect waves-light"><a onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a></li>
+      </ul>
+    </div>
+
+    <!-- Side Nav -->
+    <ul class="side-nav" id="nav-mobile">
+      <li><a href="index.html"><i class="material-icons">view_quilt</i>Portfolio</a></li>
+      <li class="active"><a href="resume.html"><i class="material-icons">assignment_ind</i>Resume</a></li>
+      <li><a href="about.html"><i class="material-icons">edit</i>About Me</a></li>
+      <li><a onclick="window.location.href='mailto:mknoedel@gmail.com'"><i class="material-icons">email</i>mknoedel@gmail.com</a></li>
+      <li><a href="tel:6508227592"><i class="material-icons">phone</i>(650) 822-7592</a></li>
+      <li><a href="https://github.com/mknoedel" target="_blank">&nbsp;<img src="./assets/Logos/GitHub-Mark-32px.png" height="18" width="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mknoedel" target="_blank">&nbsp;<img src="./assets/Logos/In-Black-54px-R.png" height="18" width="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   LinkedIn</a></li>
+    </ul>
+
+    <div id="documentation" class="section gray">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l9">
+            <div id="professional" class="scrollspy">
+              <h3>Professional Experience</h3>
+              <div class="resume-element">
+                <h5><b>Epic Systems</b><i> - Madison, WI</i></h5>
+                <h6>Technical Support and Developer</h6>
+                <h6>Dec 2015 - Jan 2017</h6>
+                <p class="caption">
+                  Designed and maintained software to fit complex healthcare workflows by leading 
+                  customer calls and working with other teams to come up with integrated solutions
+                </p>
+                <p class="caption">
+                  Led ambulatory maintenance for multiple healthcare organizations whose responsibilities 
+                  include documentation of all outpatient clinical orders, injection administrations, 
+                  medical problem documentation, historical recordkeeping, charging and billing, and 
+                  population health big-data gathering and reporting
+                </p>
+                <p class="caption">
+                  Programmed and maintained code in Caché client-server applications for the industry 
+                  leading integrated electronic health record
+                </p>
+              </div>
+              <div class="resume-element">
+                <h5><b>Washington University School of Medicine</b><i> - St. Louis, MO</i></h5>
+                <h6>Undergraduate Research Assistant</h6>
+                <h6>May 2012 - Jan 2014</h6>
+                <p class="caption">
+                  Designed, machined, and developed code for a microscope, named SOFI, that had the ability 
+                  to capture the fluorescence change of a protein with high accuracy during a heartbeat. 
+                  Code written in MATLAB
+                </p>
+                <p class="caption">
+                  For technical drawings and a deeper description, check out my <a href="https://mknoedel.com">Portfolio</a>
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div id="education" class="scrollspy">
+              <h3>Education</h3>
+              <div class="resume-element">
+                <h5><b>Washington University in St. Louis</b><i> - St. Louis, MO</i></h5>
+                <h6>B.S. Mechanical Engineering<i> - minor in Robotics</i></h6>
+                <h6>Aug 2011 - May 2015</h6>
+                <!-- Modal Trigger -->
+                <p class="caption"><a class="waves-effect waves-light btn blue" href="#modal1">Proof I graduated</a></p>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content" style="display: flex; align-items: flex-end; justify-content: center;">
+                    <img src="./assets/GradProof/proof.jpg" alt="This was a bad joke">
+                    <p class="caption" style="margin-left: 10px">Get it? For actual proof or for any other documents, send me an <a onclick="window.location.href='mailto:mknoedel@gmail.com'">email</a> or start Wash U's <a href="https://registrar.wustl.edu/student-records/verification/">verification process</a>.</p>
+                  </div>
+                  <div class="modal-footer center">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat" style="display: flex; align-items: center; justify-content: center;">Yeah... I get it</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div id="technical" class="scrollspy">
+              <h3>Technical Experience</h3>
+              <h6>For finished products displaying this experience, check out my <a href="https://mknoedel.com">Portfolio</a></h6>
+              <table class="bordered">
+                <thead>
+                  <tr>
+                    <th data-field="id">Language</th>
+                    <th data-field="name">Description</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>TypeScript</td>
+                    <td>Used for both <a href="https://demonorthwind.com" target="_blank">NorthwindNode</a> and Perchpal - strongest language</td>
+                  </tr>
+                  <tr>
+                    <td>Javascript</td>
+                    <td>Used for <a href="https://github.com/navingator/northwind-web-test" target="_blank">NorthwindNode backend</a> - academic coding projects</td>
+                  </tr>
+                  <tr>
+                    <td>Angular 2+</td>
+                    <td>Created both <a href="https://demonorthwind.com" target="_blank">NorthwindNode</a> and Perchpal using Angular 4 - very strong</td>
+                  </tr>
+                  <tr>
+                    <td>JS Frameworks</td>
+                    <td>node.js, express.js, grunt.js, passport.js, RxJS - Observables and Promises</td>
+                  </tr>
+                  <tr>
+                    <td>SQL</td>
+                    <td>PostgreSQL used for both <a href="https://demonorthwind.com" target="_blank">NorthwindNode</a> and Perchpal - wrote reports for Epic</td>
+                  </tr>
+                  <tr>
+                    <td>Sass Css Html</td>
+                    <td>Web development experience</td>
+                  </tr>
+                  <tr>
+                    <td>OSX & Windows</td>
+                    <td>Experience in working with both and MacOS and Windows OS at the same time</td>
+                  </tr>
+                  <tr>
+                    <td>RubyGems</td>
+                    <td>Used for <a href="http://docs.perchpal.com/" target="_blank">PerchPal API documentation site</a></td>
+                  </tr>
+                  <tr>
+                    <td>Database</td>
+                    <td>Set up and maintain databases for <a href="https://demonorthwind.com" target="_blank">NorthwindNode</a> and PerchPal</td>
+                  </tr>
+                  <tr>
+                    <td>Server</td>
+                    <td>Set up and maintain servers for <a href="https://demonorthwind.com" target="_blank">NorthwindNode</a>, PerchPal, and this site</td>
+                  </tr>
+                  <tr>
+                    <td>MATLAB</td>
+                    <td>All robotics experience including SOFI from my <a href="https://mknoedel.com">Portfolio</a></td>
+                  </tr>
+                  <tr>
+                    <td>M Cache VB</td>
+                    <td>The primary coding languages and framework that I used at Epic</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <br><br>
+            </div>
+            <hr>
+            <div id="entrepreneur" class="scrollspy">
+              <h3>Entrepreneurial Projects</h3>
+              <div class="resume-element">
+                <h5><b>DemoNorthwind.com</b><i> - <a href="https://demonorthwind.com" target="_blank">link</a></i></h5>
+                <h6>Creator and Administrator</h6>
+                <p class="caption">
+                  A demo website I created to be used as a tutorial for full stack development. For more information, 
+                  check out its <a href="https://mknoedel.com">portfolio</a> entry 
+                  or check out the <a href="https://github.com/navingator/northwind-web-test" target="_blank">repo</a>
+                </p>
+              </div>
+              <div class="resume-element">
+                <h5><b>PerchPal.com</b><i> - Under Construction</i></h5>
+                <h6>Creator and Administrator</h6>
+                <p class="caption">
+                  PerchPal is a social media site used to match up friends who are looking to make a larger purchase with 
+                  friends who are knowledgeable in that product or product category
+                </p>
+                <p class="caption">
+                  While the site is still in progress and the repo is private, the <a href="http://docs.perchpal.com/" target="_blank">
+                  PerchPal API documentation website</a> is online and is being actively updated as new functionality comes out. 
+                  For more information, check out its <a href="https://mknoedel.com">portfolio</a> entry
+                </p>
+              </div>
+            </div>
+            <hr>
+            <div id="coursework" class="scrollspy">
+              <h3>Additional Coursework</h3>
+              <h6>Training I have received that has not already been presented</h6>
+              <table class="bordered">
+                <thead>
+                  <tr>
+                    <th data-field="id">Knowledge</th>
+                    <th data-field="name">Description</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Teaching Adult Education</td>
+                    <td>Taken at Epic in order to become a certified specialist trainer</td>
+                  </tr>
+                  <tr>
+                    <td>Project/Conflict Management</td>
+                    <td>Trained professionalism in a business environment</td>
+                  </tr>
+                  <tr>
+                    <td>3D Design</td>
+                    <td>Experience in multiple Computer Aided Design softwares - examples can be seen in my <a href="https://mknoedel.com">Portfolio</a></td>
+                  </tr>
+                  <tr>
+                    <td>Epic Certifications</td>
+                    <td>I was responsible for the largest application at Epic, the Ambulatory application - because of this, I needed to get certified in over 10 applications</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <br><br>
+            </div>
+            <hr>
+            <div id="interests" class="scrollspy">
+              <h3>Interests</h3>
+              <div class="resume-element">
+                <h5>Construction</h5>
+                <p class="caption">
+                  Assisted or managed structures for Habitat for Humanity and the Thurtene Carnival
+                </p>
+              </div>
+              <div class="resume-element">
+                <h5>Ultimate Frisbee</h5>
+                <p class="caption">
+                  Currently playing on multiple teams in Madison, WI
+                </p>
+              </div>
+              <div class="resume-element">
+                <h5>Camping and Rock Climbing</h5>
+                <p class="caption">
+                  Studied abroad in New Zealand and, after leaving Epic, I attempted to start my own rock climbing gym in Madison
+                </p>
+              </div>
+
+            </div>
+            <!--<div id="mobile" class="scrollspy">
+              <h3>Mobile Responsive Styles</h3>
+              <p class="caption">The GalleryExpand plugin has custom mobile styles for both the default and fillScreen transitions. This is controlled by the <code class="language-javascript inline">responsiveThreshold</code> option. This options is a screen width in pixels that denotes when the plugin will switch to the mobile style.</p>
+              <pre><code class="language-javascript">
+                // Only mobile style
+                $('.gallery-expand').galleryExpand({
+                  responsiveThreshold: Infinity
+                });
+              </code></pre>
+
+            </div>-->
+          </div>
+
+          <div class="col s12 l3">
+            <ul class="section table-of-contents hide-on-med-and-down">
+              <li><a href="#professional">Professional Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#technical">Technical Experience</a></li>
+              <li><a href="#entrepreneur">Entrepreneurial Projects</a></li>
+              <li><a href="#coursework">Additional Coursework</a></li>
+              <li><a href="#interests">Interests</a></li>
+              <!--<li><a href="#mobile">Mobile</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <!-- Core Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="./js/color-thief.min.js"></script>
+    <script src="./js/galleryExpand.js"></script>
+    <script src="./js/init.js"></script>
+    <!-- Custom -->
+    <script src="./js/custom/materialize-additions.js"></script>
+
+  </body>
+</html>
