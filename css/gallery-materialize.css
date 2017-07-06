@@ -8765,6 +8765,8 @@ nav .categories-wrapper .categories-container .categories > li {
 
 .gallery .gallery-item {
   margin-bottom: 1.5rem;
+  border-width: 0px 0px 0px 5px;
+  border-style: solid;
 }
 
 .gallery .gallery-item .card {
