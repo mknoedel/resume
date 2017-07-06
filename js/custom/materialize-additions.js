@@ -89,6 +89,9 @@
 	toc.pushpin({ top: toc.offset().top });
 	$('.scrollspy').scrollSpy();
 
+	// Chip init
+	$('.chips').material_chip();
+
 	// Modal init
 	$(document).ready(function(){
 		// the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
