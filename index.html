@@ -6,32 +6,34 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="shortcut icon" href="./assets/Favicons/green-favicon.ico" type="image/x-icon">
+
     <title>Michael Knoedel</title>
 
     <!-- Lato Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheet -->
-    <link href="css/gallery-materialize.css" rel="stylesheet">
+    <link href="css/gallery-materialize.min.css" rel="stylesheet">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="about">
 
     <!-- Navbar and Header -->
-    <nav class="nav-extended">
+    <nav class="nav-extended green">
       <div class="nav-background">
         <div class="pattern active" style="background-image: url('./assets/argyle_pattern_cp.png');"></div>
       </div>
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo"><i class="material-icons">view_quilt</i>Portfolio</a>
+        <a href="#" class="brand-logo"><i class="material-icons">star</i>About Me</a>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a href="index.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li class="active"><a href="index.html">About Me</a></li>
           <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Contact Me<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="https://github.com/mknoedel" target="_blank"><img src="./assets/Logos/GitHub-Mark-Light-32px.png" height="18" width="18"></a></li>
           <li><a href="https://www.linkedin.com/in/mknoedel" target="_blank"><img src="./assets/Logos/In-White-54px-R.png" height="18" width="18"></a></li>
@@ -42,500 +44,74 @@
           <li><a href="tel:6508227592"><i class="material-icons">phone</i>(650) 822-7592</a></li>
         </ul>
 
-        <div class="nav-header center">
-          <h1>Portfolio</h1>
-          <div class="tagline">Michael Knoedel</div>
-        </div>
-      </div>
-
-      <!-- Fixed Masonry Filters -->
-      <div class="categories-wrapper purple lighten-1">
-        <div class="categories-container">
-          <ul class="categories container">
-            <li class="active"><a href="#all">All</a></li>
-            <li><a href="#design">Design</a></li>
-            <li><a href="#engineering">Engineering</a></li>
-            <li><a href="#coding">Coding</a></li>
-          </ul>
+        <div class="nav-header row">
+          <div class="col s12 m3 center-on-small-only">
+            <div class="image-container">
+              <img src="./assets/MicaelKnoedel.jpg" height="200px" width="200px" style="border-radius: 50%;">
+            </div>
+          </div>
+          <div class="col s12 m9">
+            <h1>Michael Knoedel</h1>
+            <div style="line-height: 20px;">Michael is a full stack developer who has a passion and a talent 
+              for design. He is looking for a career in computer science that not only allows him to solve 
+              highly-challenging technical problems which he has proven to excel at, but also allows him to 
+              use his extensive design skills to facilitate excellent user experiences. He is a disciplined 
+              and talented developer who can do it all.
+            </div>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- Sidenav -->
+
+    <!-- Side Nav -->
     <ul class="side-nav" id="nav-mobile">
-      <li class="active"><a href="index.html"><i class="material-icons">view_quilt</i>Portfolio</a></li>
-      <li><a href="resume.html"><i class="material-icons">school</i>Resume</a></li>
-      <li><a href="about.html"><i class="material-icons">edit</i>About Me</a></li>
+      <li><a href="portfolio.html"><i class="material-icons">view_quilt</i>Portfolio</a></li>
+      <li><a href="resume.html"><i class="material-icons">assignment_ind</i>Resume</a></li>
+      <li class="active"><a href="index.html"><i class="material-icons">edit</i>About Me</a></li>
       <li><a onclick="window.location.href='mailto:mknoedel@gmail.com'"><i class="material-icons">email</i>mknoedel@gmail.com</a></li>
       <li><a href="tel:6508227592"><i class="material-icons">phone</i>(650) 822-7592</a></li>
       <li><a href="https://github.com/mknoedel" target="_blank">&nbsp;<img src="./assets/Logos/GitHub-Mark-32px.png" height="18" width="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/mknoedel" target="_blank">&nbsp;<img src="./assets/Logos/In-Black-54px-R.png" height="18" width="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   LinkedIn</a></li>
     </ul>
 
-    <!-- Gallery -->
     <div id="portfolio" class="section gray">
       <div class="container">
         <div class="gallery row">
-          <!-- SOFI -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter engineering design">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img class="responsive-img" src="./assets/1 SOFI/SF002 sCMOS Fluoroscope Assembly Explosion-min.jpeg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>SOFI</span>
+          <div class="col l4 m6 s12 gallery-item gallery-filter all">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Look Around!
+                </span>
+                <p>This site was built by me, so be sure to check out the rest of it! Want to know how something works? 
+                  Head over to my repo on <a href="https://github.com/mknoedel/resume" target="_blank">Github</a>!</p>
               </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>SOFI</h3>
-                  <span class="price">sCMOS - Optical - Fluorecence - Imager</span>
-                </div>
-                <p class="description">
-                  I designed, machined, constructed and developed code for a microscope while working at the 
-                  Washington University Medical School as a research assistant. The goal of the project was to 
-                  understand how scar tissue affected the propagation of heartbeats.
-                </p>
-                <p class="description">
-                  My experiment called for imaging two inches of heart tissue at once, which was a far larger 
-                  viewing area than any microscope in the lab could provide. This meant that I needed to make 
-                  one myself! I created CAD drawings using AutoCad Inventor and machined all custom parts using 
-                  Wash U’s machine shop. Specialty parts like procision light filters needed to be purchased. 
-                  Once the microscope, later named SOFI, was constructed, I developed MATLAB code to isolate 
-                  fluorescence values to create videos that showed the path heartbeats took. 
-                </p>
-                <p class="description">
-                  Despite being made from scratch and despite the final price tag being less than 1% of the 
-                  expected cost, SOFI was able to capture the heartbeats with high sensitivity while 
-                  maintaining a sterile environment as to not kill the samples. SOFI supported the research 
-                  efforts of the Elson Lab for years after my project was complete.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/1 SOFI/SF001 sCMOS Optical Fluorescence Imager-min.jpeg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/1 SOFI/SF002 sCMOS Fluoroscope Assembly Explosion-min.jpeg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/1 SOFI/SF303 Stage Clip-min.jpg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
+              <div class="card-action">
+                <a href="https://mknoedel.com">More info in portfolio</a>
               </div>
             </div>
           </div>
-          <!-- Thurtene -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter engineering design">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/4 Thurtene/Thurtene2013/Thurtene-Boat-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Thurtene</span>
+          <div class="col l4 m6 s12 gallery-item gallery-filter all">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Stay Tuned!
+                </span>
+                <p>I am always updating this site with new content including updates on my current project 
+                  PerchPal, a social media site for putting friends together for larger purchases.</p>
               </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Thurtene</h3>
-                  <span class="price">Build Overall and Lead Designer</span>
-                </div>
-                <p class="description">
-                  For three years, I worked with a large group of friends and colleagues to create 
-                  playhouses for the yearly <a href="http://www.thurtene.org/" target="_blank">Thurtene 
-                  Carnival</a> with 2014 being the year I took on the role of Overall. In this role, I 
-                  directly managed over 50 people in the design and construction of a 12 foot tall, 
-                  1000+ square foot theater. 
-                </p>
-                <p class="description">
-                  Extra esponsibilities I took on as Overall include:
-                  <ul>
-                    <li class="description">•  Facilitating supply deliveries</li>
-                    <li class="description">•  Setting up and running equipment training</li>
-                    <li class="description">•  Ensuring safety training of the team on the lot</li>
-                    <li class="description">•  Working with a certified architect for structural integrity assurance</li>
-                    <li class="description">•  Setting up supply drops</li>
-                    <li class="description">•  Maintaining relations with the other groups involved in the carnival</li>
-                    <li class="description">•  Ensuring deconstruction takes place within the timeframe</li>
-                  </ul>
-                </p>
-                <p class="description">
-                  Themes for the years I was involved:
-                  <ul>
-                    <li class="description">•  2013 - Riverboat</li>
-                    <li class="description">•  2014 - Space Lab</li>
-                    <li class="description">•  2015 - World O' West</li>
-                  </ul>
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/4 Thurtene/Thurtene2013/Thurtene-Boat-Inside-min.jpg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/4 Thurtene/Thurtene2014/Thurtene2-min.jpg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/4 Thurtene/Thurtene2014/Thurtene3-min.jpg"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/4 Thurtene/Thurtene2015/Thurtene1-min.jpg"></a>
-                    <a class="carousel-item" href="#six!"><img src="./assets/4 Thurtene/Thurtene2015/Thurtene2-min.jpg"></a>
-                    <a class="carousel-item" href="#seven!"><img src="./assets/4 Thurtene/Thurtene2015/Thurtene3-min.jpg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
+              <div class="card-action">
+                <a href="http://docs.perchpal.com/" target="_blank">API documentation</a>
               </div>
             </div>
           </div>
-          <!-- EWB -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter engineering">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img class="responsive-img" src="./assets/10 EWB/Water Distribution Map for MSB/Water Distribution Map for MSB-1-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Engineers Without Borders</span>
+          <div class="col l4 m6 s12 gallery-item gallery-filter all">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Shop?
+                </span>
+                <p>Be sure to head over to the Michael Knoedel Shop for all your Michael Knoedel apparel related needs!</p>
               </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Engineers w/o Borders</h3>
-                  <span class="price">Mekelle School for the Blind</span>
-                </div>
-                <p class="description">
-                  For two years, I worked with the Washington University's Engineers Without Borders chapter, 
-                  who had recently begun a project with the Mekelle School for the Blind in Ethiopia that aimed at 
-                  building a sustainable infrastructure to improve conditions for their students. I joined for their 
-                  January 2013, and January 2014 projects which addressed problems with the school's electrical and 
-                  water storage/distribution systems.
-                </p>
-                <p class="description">
-                  As a member and eventually as treasurer, the vast majority of my responsibilities focused on fundraising, establishing team objectives, and planning project details, 
-                  including completing an engineering analysis and work schedule. The actual implementations accounted for very little of my total time on the projects.
-                </p>
-                <p class="description">
-                  Thanks to our interventions, erosion and inconvenience due to the flooding of their rainy season has been severely decreased, and the safety of their campus has been greatly improved.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/10 EWB/Proposed Well Head Piping/Proposed Well Head Piping-1-min.jpg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/10 EWB/Photos/1 (3)-min.jpg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/10 EWB/Photos/1-min.jpg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/10 EWB/Photos/P1040270-min.JPG"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-1-min.jpg"></a>
-                    <a class="carousel-item" href="#six!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-2-min.jpg"></a>
-                    <a class="carousel-item" href="#seven!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-3-min.jpg"></a>
-                    <a class="carousel-item" href="#eight!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-4-min.jpg"></a>
-                    <a class="carousel-item" href="#nine!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-5-min.jpg"></a>
-                    <a class="carousel-item" href="#ten!"><img src="./assets/10 EWB/EWB -Ethiopia Project Proposal/EWB -Ethiopia Project Proposal-6-min.jpg"></a>
-                    <a class="carousel-item" href="#eleven!"><img src="./assets/10 EWB/Water Distribution Map for MSB/Water Distribution Map for MSB-1-min.jpg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Adventure Cove -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter design">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/2 Adventure Cove/AdcentureCove-Cover-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Adventures’ Retreat</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Adventures’ Retreat</h3>
-                  <span class="price">St Louis Community Center Design</span>
-                </div>
-                <p class="description">
-                  I created this design of a new community center for a St. Louis design competition for 
-                  <a href="http://www.google.com/maps?f=l&hl=en&q=801+DeMun+Avenue%2c+Clayton%2c+MO+63105" target="_blank">
-                  Concordia Park.</a> The primary focus for my design was to preserve the aesthetic of nature. 
-                  I did this by designing not only a structure for the community center, but also by the 
-                  landscape around it. I wanted to have the structure to meld into the environment and give 
-                  people a feeling of discovery and adventure when using it. I wanted it to feel like a hidden cove.
-                </p>
-                <p class="description">
-                  The design includes a children’s pool area with four different ways to enter leading to hours 
-                  of exploration and enjoyment. For the parents, the design has a lookout where they can keep 
-                  1an eye on their children while sunbathing.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/2 Adventure Cove/000 IllustratorPresentation1-min.jpeg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/2 Adventure Cove/000.5 IllustratorPresentation2-min.jpeg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/2 Adventure Cove/001 PerspectiveCove-min.jpeg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/2 Adventure Cove/004 TopographyTopLeft-min.jpeg"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/2 Adventure Cove/008 Process1-min.jpeg"></a>
-                    <a class="carousel-item" href="#six!"><img src="./assets/2 Adventure Cove/009 Process2-min.jpeg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Sci Fi Playground -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter design">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/3 Sifi Playground/SciFi-Cover-min-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Sci Fi Playground</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Sci Fi Playground</h3>
-                  <span class="price">Playground Design</span>
-                </div>
-                <p class="description">
-                  I created this playground design with a focus of maximizing childrens’ interactivity and 
-                  imagination potential, while still being an appealing piece of art.
-                </p>
-                <p class="description">
-                  In order to accomplish this, I created abstract structures that look organic. This allowed for 
-                  plenty of pockets and bars where children could climb and play on, while not forcing an idea 
-                  for how to play with it. Although the centerpiece of the playground was made to look like a 
-                  spaceship, I made sure it was abstract enough to allow children to come up with their own 
-                  narratives when playing with it.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/3 Sifi Playground/002 SifiV1Perspective-min-min.jpeg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/3 Sifi Playground/003 SifiV2Module-min-min.jpeg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/3 Sifi Playground/005 SifiV2PerspectiveBack-min-min.jpeg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/3 Sifi Playground/006 SifiV2FormFrount-min-min.jpeg"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/3 Sifi Playground/SciFi-Cover-min-min.jpg"></a>
-                    <a class="carousel-item" href="#six!"><img src="./assets/3 Sifi Playground/001 SifiV1Light-min-min.jpeg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Senior Design Project -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter engineering">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/5 Senior Design Project/SD-Cover-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Automatic Dog Exercizer</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Automatic Dog Exercizer</h3>
-                  <span class="price">The Dog Tank</span>
-                </div>
-                <p class="description">
-                  I designed and constructed a device that could launch a tennis ball 20 times 20+ feet to 
-                  exercise dogs while their owners are away. In order to maintain reliability and ease of 
-                  use, the no electricity is used. Instead, power is stored in the form of a refillable 
-                  hanging water jug. Each time a dog returns a ball to the device, height is released from 
-                  the weight and is converted into kinetic energy to launch the ball.
-                </p>
-                <p class="description">
-                  The result is a successful prototype, but for a production-ready design, I would decrease 
-                  the size by using power from springs instead of weights and by using metal parts instead 
-                  of wood.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/5 Senior Design Project/001 SDFullAssembly-min.jpg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/5 Senior Design Project/002 SDPinAssembly-min.jpg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/5 Senior Design Project/003 SDPrototype-min.jpeg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/5 Senior Design Project/004 SDPinAssembly-min.jpeg"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/5 Senior Design Project/005 SDTopWorkingParts-min.jpeg"></a>
-                    <a class="carousel-item" href="#six!"><img src="./assets/5 Senior Design Project/006 SDConcept-min.jpeg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Potting Shed -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter design">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/6 Potting Shed/PotShed-Cover-min.jpg" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Farmers' Market</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Farmers' Market</h3>
-                  <span class="price">Community Design</span>
-                </div>
-                <p class="description">
-                  I created a design for a community garden and potting shed. The potting shed doubles 
-                  as a market when the crops are harvested. The design includes topography maps of the 
-                  garden and drafts of the potting shed and exterior deck.
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/6 Potting Shed/002 PotShedPerspectiveEntry-min.jpeg"></a>
-                    <a class="carousel-item" href="#two!"><img src="./assets/6 Potting Shed/001 PotShedTop-min.jpeg"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/6 Potting Shed/003.5 PotShedDeckDraft-min.jpeg"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/6 Potting Shed/003 PotShedDraft-min.jpeg"></a>
-                    <a class="carousel-item" href="#five!"><img src="./assets/6 Potting Shed/004 PotShedTopography-min.jpeg"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Northwind -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter coding">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/9 Northwind/Northwind-Mobile.png" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Northwind Node</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Northwind Node</h3>
-                  <span class="price">Full Stack Website - <a href="https://demonorthwind.com" target="_blank">link</a></span>
-                </div>
-                <p class="description">
-                  This is a website that I put together in order to display my knowledge of full stack 
-                  development. I built the site using an <a href="https://angular.io" target="_blank">
-                  Angular 4</a> frontend, which connects to a RESTful API I created using a 
-                  <a href="https://nodejs.org" target="_blank">Node</a> and 
-                  <a href="https://expressjs.com" target="_blank">Express</a> framework. My API then connects 
-                  with a <a href="https://postgresql.org" target="_blank">PostgreSQL</a> database. Important 
-                  features inculde full unit testing of the API, custom authentication and custom authorization.
-                </p>
-                <p class="description">
-                  As a regular user, you can:
-                  <ul>
-                    <li class="description">•  Create an account and stay signed in even after navigating away from the site</a></li>
-                    <li class="description">•  View details of all product categories</a></li>
-                    <li class="description">•  View details of all products</a></li>
-                    <li class="description">•  Create new products</a></li>
-                    <li class="description">•  Edit and delete products that you created</a></li>
-                  </ul>
-                </p>
-                <p class="description">
-                  As an admin, you can:
-                  <ul>
-                    <li class="description">•  Do everything regular users can</a></li>
-                    <li class="description">•  Create new product categories</a></li>
-                    <li class="description">•  Edit and delete all product categories</a></li>
-                    <li class="description">•  Edit and delete all products</a></li>
-                  </ul>
-                </p>
-                <p class="description">
-                  If you would like to test out the admin functionality, simply navigate to any 
-                  admin-protected route like <a href=”https://demonorthwind.com/categories/new”>
-                  demonorthwind.com/categories/new</a> after you have already logged in.
-                </p>
-                <p class="description">
-                  I built the site to be entirely open source with the intent of making it into a tutorial. Want to know how something works? 
-                  Check it out on <a href="https://github.com/navingator/northwind-web-test" target="_blank">Github</a>!
-                </p>
-
-                <div class="carousel-wrapper">
-                  <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="./assets/9 Northwind/Northwind-Code-min.JPG"></a>
-                    <a class="carousel-item" href="#three!"><img src="./assets/9 Northwind/Northwind1-min.JPG"></a>
-                    <a class="carousel-item" href="#four!"><img src="./assets/9 Northwind/Northwind-Tests-min.JPG"></a>
-                  </div>
-                  <div class="right transparent blue-grey-text text-lighten-1" style="margin-bottom: 90px;">swipe images for more</div>
-                </div>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Resume Site -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter coding">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/12 Resume/Portfolio.png" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Resume Website</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>Resume Website</h3>
-                  <span class="price">You're Lookin' at it!</span>
-                </div>
-                <p class="description">
-                  Built and maintained by Michael Knoedel. Want to know how something works? 
-                  Check it out on <a href="https://github.com/mknoedel/resume" target="_blank">Github</a>!
-                </p>
-                <p class="description">
-                  Important features include:
-                  <ul>
-                    <li class="description">•  Reactive card layout powered by <a href="http://masonry.desandro.com/" target="_blank">Masonry</a>, and <a href="http://imagesloaded.desandro.com/" target="_blank">imagesLoaded</a> </li>
-                    <li class="description">•  Design language and components powered by <a href="http://materializecss.com/" target="_blank">Materialize</a></li>
-                    <li class="description">•  Sass configuration and task runner powered by <a href="https://gruntjs.com/" target="_blank">Grunt.js</a></li>
-                    <li class="description">•  Reactive css using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="_blank">Flexbox</a></li>
-                  </ul>
-                </p>
-
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
-              </div>
-            </div>
-          </div>
-          <!-- PerchPal -->
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter coding">
-            <div class="gallery-curve-wrapper">
-              <a class="gallery-cover gray">
-                <img src="./assets/11 PerchPal/PerchPal-Code.JPG" alt="placeholder">
-              </a>
-              <div class="gallery-header">
-                <span>Current Project - PerchPal</span>
-              </div>
-              <div class="gallery-body">
-                <div class="title-wrapper">
-                  <h3>PerchPal</h3>
-                  <span class="price">Social Media Site for Purchases</span>
-                </div>
-                <p class="description">
-                  This is my current project; creating a full stack, production ready social media site aimed at 
-                  connecting friends who are experts in products with friends who are looking to buy those products.
-                <p class="description">
-                  The site includes configuration for frontend and backend unit testing, end-to-end testing, hybrid server-side/client-side 
-                  rendering using <a href=”https://universal.angular.io/” target="_blank">Angular Universal</a> and 
-                  <a href=”https://github.com/angular/preboot” target="_blank">preboot.js</a>, bundling and uglifying using 
-                  <a href=”https://webpack.js.org/” target="_blank">Webpack</a>, development building and serving using 
-                  <a href=”https://cli.angular.io/” target="_blank">Angular Cli</a>, an <a href="https://angular.io" target="_blank">Angular 4</a> 
-                  frontend, a <a href="https://postgresql.org" target="_blank">PostgreSQL</a> database, and 
-                  a RESTful API made with <a href="https://nodejs.org" target="_blank">Node</a> and 
-                  <a href="https://expressjs.com" target="_blank">Express</a>.
-                </p>
-                <p class="description">
-                  The repository is private, but I am documenting the API on my 
-                  <a href="http://docs.perchpal.com/" target="_blank">PerchPal API documentation site</a> 
-                  so check it out! I will be updating this page as the project moves along.
-                </p>
-              </div>
-              <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="Materialize.toast('Thanks!', 1000)"><i class="material-icons">favorite</i></a>
+              <div class="card-action">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Buy Buy Buy!</a>
               </div>
             </div>
           </div>
@@ -549,13 +125,13 @@
 
     <!-- Core Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="js/color-thief.min.js"></script>
-    <script src="js/galleryExpand.js"></script>
-    <script src="js/init.js"></script>
-    
+    <script src="./js/color-thief.min.js"></script>
+    <script src="./js/galleryExpand.js"></script>
+    <script src="./js/init.js"></script>
+
     <!-- Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
